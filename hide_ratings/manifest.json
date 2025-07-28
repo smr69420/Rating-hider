@@ -1,0 +1,17 @@
+{
+"manifest_version":3,
+"name":"Hide Ratings",
+"version":"1.0",
+
+"description":"hides imdb ratings",
+
+"icons": {
+	"48":"border-48.png"
+},
+"content_scripts": [
+    {
+      "matches": ["*://*.imdb.com/*","*://*.letterboxd.com/*"],
+      "js": ["hide_ratings.js"]
+    }
+  ]
+}
